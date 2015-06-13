@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TabHost必须包含一个 TabWidget和一个FrameLayout -->
+    <TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <!-- FrameLayout的id属性必须为 @android:id/tabcontent -->
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top" >
+        </FrameLayout>
+
+        <!-- TabWidget的id属性必须为 @android:id/tabs -->
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ccDEDEDE"
+            android:layout_gravity="bottom"
+             >
+        </TabWidget>
+    </TabHost>

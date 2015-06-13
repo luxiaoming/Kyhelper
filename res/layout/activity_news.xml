@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header_news" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_news_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="关于公布江西省2015年硕士研究生招生考试初试成绩的公告"
+                android:textColor="#2F4F4F"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/tv_news_author"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:text="来自: 江西省教育考试院"
+                    android:textColor="#FF8C00"
+                    android:textSize="12sp" />
+            
+            <TextView
+                    android:id="@+id/tv_news_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:text="发布日期 : 2015-2-12"
+                    android:textColor="#FF8C00"
+                    android:textSize="12sp" />
+            
+            <TextView
+                android:id="@+id/tv_news_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="10dp"
+                android:padding="10dp"
+                android:text="
+关于公布江西省2015年硕士研究生招生考试初试成绩的公告
+各位考生：
+		江西省2015年硕士研究生招生考试初试评卷工作已经结束，
+现将报考我省招生单位的考生初试成绩予以公布，请考生登录“江西教育网”、
+“江西省教育考试院网站”或所报考的招生单位研究生招生网站查询成绩。
+\n现将有关事项公告如下：
+\n\n 一、复试：进入复试分数基本要求由教育部统一划定，各招生单位将根据生源情况通知符合条件的考生参加复试。
+　　\n二、查分：考生如对本人成绩有疑问，可向所报考的招生单位申请查分。申请查分的考生须注意如下事项：
+　　\n1.查分时间：3月2—6日，其他时间不予受理。
+　　\n2.查分要求：考生须向招生单位递交书面申请，并附身份证和准考证复印件(具体要求以招生单位公告为准!)。
+　　\n3.查分内容：评卷过程中是否存在漏判、成绩累计、登记错误，评卷宽严不在查分范围内。
+　　\n4.查分方式：⑴统考科目由各招生单位汇总申请查分考生名单后上报我院，由我院对网上评卷各题给分、
+	\n统分情况进行复查;⑵招生单位自命题科目由招生单位研究生院(处、部)有关人员会同纪检监察人员共同进行答卷复查。
+	\n考生不得查阅答卷。
+　　\n\n特此公告。
+													江西省教育考试院
+
+　　													2015年2月12日
+"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

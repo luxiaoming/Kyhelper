@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/img_subject"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:background="#008B8B"
+        android:contentDescription="科目展示标记" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_alignBaseline="@id/img_subject"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/img_subject"
+        android:background="#F5F5F5"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/tv_subject_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="极限的基本性质"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_subject_paper"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignBaseline="@id/tv_subject_name"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@id/tv_subject_name"
+            android:background="#008000"
+            android:gravity="center_vertical"
+            android:text="劵"
+            android:textColor="#F8F8FF"
+            android:textSize="12sp"
+            android:typeface="monospace"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_subject_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_subject_name"
+            android:layout_centerVertical="true"
+            android:text="分类目录"
+            android:textColor="#808080"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_subject_loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_subject_name"
+            android:layout_alignParentBottom="true"
+            android:text="极限的概念与性质"
+            android:textColor="#B8860B"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

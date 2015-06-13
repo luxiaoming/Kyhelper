@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+interpolator 翻译为“内插程序”，
+
+官方文档解释：An interpolator defines the rate of change of an animation. 
+This allows the basic animation effects (alpha, scale, translate, rotate) 
+to be accelerated, decelerated, repeated, etc. 
+
+通俗来讲就是android:interpolator 这个属性允许对动画做些改变，如加速，重复等。
+"@anim/cycle_7" 是对自定义interpolator 的引用。
+-->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shareInterpolator="false" >
+
+    <scale
+        android:duration="1000"
+        android:fromXScale="0.8"
+        android:fromYScale="0.8"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:repeatCount="1"
+        android:repeatMode="reverse"
+        android:toXScale="1.0"
+        android:toYScale="1.0" />
+
+    <translate
+        android:duration="1000"
+        android:fromXDelta="0"
+        android:interpolator="@anim/cycle_7"
+        android:toXDelta="5" />
+
+</set>

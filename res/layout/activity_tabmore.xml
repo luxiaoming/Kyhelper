@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- 成型不改 -->
+
+    <include layout="@layout/header_tabmore" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="65dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:typeface="monospace" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/id_btn_QiuMaXing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginStart="3dp"
+                        android:background="@drawable/myselector_bigbutton"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="-求骂醒"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/id_btn_KaoYanLunTan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginStart="3dp"
+                        android:background="@drawable/myselector_bigbutton"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="-考研论坛 "
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/id_btn_FenShuXian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginStart="3dp"
+                        android:background="@drawable/myselector_bigbutton"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="-历年分数线  "
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/id_btn_BookTuiJian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginStart="3dp"
+                        android:background="@drawable/myselector_bigbutton"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="-书籍推荐"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/id_btn_ZiXiShi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginStart="3dp"
+                        android:background="@drawable/myselector_bigbutton"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="-我校考研自习室"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/id_btn_FuShiZhiNan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginStart="3dp"
+                        android:background="@drawable/myselector_bigbutton"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="-复试指南"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/id_btn_MianShiZhiDao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginStart="3dp"
+                        android:background="@drawable/myselector_bigbutton"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="-面试指导"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/id_btn_ZaiXianGuFen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginStart="3dp"
+                        android:background="@drawable/myselector_bigbutton"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="-在线估分"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginStart="3dp"
+                        android:background="@drawable/myselector_bigbutton"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="-吐槽"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/id_btn_JobNews"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginStart="3dp"
+                        android:background="@drawable/myselector_bigbutton"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="-就业消息"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/id_btn_XinWenZiXun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginStart="3dp"
+                        android:background="@drawable/myselector_bigbutton"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="-新闻资讯"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/id_btn_YanYouJingYan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/myselector_bigbutton"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="-研友经验"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/id_btn_YuanXiaoZhuanYe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginStart="3dp"
+                        android:background="@drawable/myselector_bigbutton"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="-院校专业"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/id_btn_ZhangZiShi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginStart="3dp"
+                        android:background="@drawable/myselector_bigbutton"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="-涨姿势"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/id_btn_plusPower"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginStart="3dp"
+                        android:background="@drawable/myselector_bigbutton"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="-正能量"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/id_btn_ChaKuaiDi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginStart="3dp"
+                        android:background="@drawable/myselector_bigbutton"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="-查快递"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <!-- 玩个游戏放松下：http://m.edianyou.com/h5game/petlink.html -->
+
+                    <Button
+                        android:id="@+id/id_btn_PlayAGame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginStart="3dp"
+                        android:background="@drawable/myselector_bigbutton"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="-资源大大大分享"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/id_btn_About"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginStart="3dp"
+                        android:background="@drawable/myselector_bigbutton"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="-关于我"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/id_btn_ShareMe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/myselector_bigbutton"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="点我分享花椒「Kyhelper」吧 :)"
+                    android:textColor="#3385FF"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

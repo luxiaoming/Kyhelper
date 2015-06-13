@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- 成型不改 -->
+
+    <include layout="@layout/header_tabclassify" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:overScrollMode="ifContentScrolls"
+        android:scrollbarSize="0.5dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="80dp" >
+
+            <!-- 数学知识点 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="数学核心考点"
+                    android:textColor="#dd3CB371"
+                    android:textSize="14sp"
+                    android:typeface="monospace" />
+
+                <com.ecjtu.ui.MyGridView
+                    android:id="@+id/gv_math_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:columnWidth="80dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="1dp"
+                    android:minHeight="90dp"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="1dp" >
+                </com.ecjtu.ui.MyGridView>
+            </LinearLayout>
+
+            <!-- 英语知识点 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="英语核心考点"
+                    android:textColor="#dd3CB371"
+                    android:textSize="14sp"
+                    android:typeface="monospace" />
+
+                <com.ecjtu.ui.MyGridView
+                    android:id="@+id/gv_english_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:columnWidth="80dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="1dp"
+                    android:minHeight="90dp"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="1dp" >
+                </com.ecjtu.ui.MyGridView>
+            </LinearLayout>
+
+            <!-- 政治知识点 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="政治核心考点"
+                    android:textColor="#dd3CB371"
+                    android:textSize="14sp"
+                    android:typeface="monospace" />
+
+                <com.ecjtu.ui.MyGridView
+                    android:id="@+id/gv_polity_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:columnWidth="80dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="1dp"
+                    android:minHeight="90dp"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="1dp" >
+                </com.ecjtu.ui.MyGridView>
+            </LinearLayout>
+
+            <!-- 经验 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="考研复习经验"
+                    android:textColor="#dd3CB371"
+                    android:textSize="14sp"
+                    android:typeface="monospace" />
+
+                <com.ecjtu.ui.MyGridView
+                    android:id="@+id/gv_fuxi_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:columnWidth="80dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="1dp"
+                    android:minHeight="90dp"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="1dp" >
+                </com.ecjtu.ui.MyGridView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

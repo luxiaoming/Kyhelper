@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+         设置按钮的按下喝弹起的效果，但是drawable不可以直接设置时颜色，而且如果效果同时还需要圆角，则还要一个shape，
+    	又因为shape中是可以设置颜色的，所以可以通过设置两个shape，表示弹起和按下，而且shape是一个drawable，符合条件
+    -->
+    <item android:drawable="@drawable/myself_button_unpress_shape" android:state_pressed="false"/>
+    <item android:drawable="@drawable/myself_button_pressed_shape" android:state_pressed="true"/>
+
+</selector>

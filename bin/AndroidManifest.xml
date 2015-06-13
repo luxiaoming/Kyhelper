@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ecjtu.kyhelper"
+    android:versionCode="2"
+    android:versionName="Beta 2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/NoTitleBarTheme" >
+        <activity
+            android:name="com.ecjtu.kyhelper.view.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ecjtu.kyhelper.view.RegisterActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ecjtu.kyhelper.view.BaseActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ecjtu.kyhelper.view.ClassifyActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ecjtu.kyhelper.view.ClassifyAllActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ecjtu.kyhelper.view.SubjectItemActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ecjtu.kyhelper.view.HomeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ecjtu.kyhelper.view.CommunionWsqActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ecjtu.kyhelper.view.MoreActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ecjtu.kyhelper.view.NewsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ecjtu.kyhelper.view.AboutActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ecjtu.kyhelper.webview.WebviewAppriseScore"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ecjtu.kyhelper.webview.WebviewChaKuaiDi"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ecjtu.kyhelper.webview.WebviewFenShuXian"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ecjtu.kyhelper.webview.WebviewFuShiZhiNan"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ecjtu.kyhelper.webview.WebviewJobNews"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ecjtu.kyhelper.webview.WebviewKaoYanLunTan"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ecjtu.kyhelper.webview.WebviewPlayAGame"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ecjtu.kyhelper.webview.WebviewPlusPower"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ecjtu.kyhelper.webview.WebviewQiuMaXing"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ecjtu.kyhelper.webview.WebviewXinWenZiXun"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ecjtu.kyhelper.webview.WebviewYuanXiaoZhuanYe"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ecjtu.kyhelper.webview.WebviewZhangZiShi"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.ecjtu.kyhelper.webview.WebviewZiXiShi"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+</manifest>

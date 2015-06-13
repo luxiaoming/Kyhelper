@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="			还在扯淡呢！看看现在什么时候了好吗？？？？还有多长时间就考研了，你怎么还在磨磨唧唧玩儿小清新？？？\n
+        	你能上500了是不是？？？\n
+       		 你能把考官秒杀了是不是？？？\n
+        	你能一步登天青云直上了是不是？？？\n
+        	不是你还不好好学？？？？还想玩儿？？？\n
+        	知不知道现在玩儿明年三月就该流泪了？？？？\n
+        	还不快滚去背单词？！！！！！！" />
+
+</RelativeLayout>

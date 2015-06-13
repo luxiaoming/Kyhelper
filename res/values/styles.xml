@@ -1,0 +1,26 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light"></style>
+
+    <style name="NoTitleBarTheme" parent="android:Theme.Light.NoTitleBar"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <style name="AppNoTitleBarTheme" parent="NoTitleBarTheme"></style>
+
+    <!-- 自定义对话框的样式 -->
+    <style name="Theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- 自定义RatingBar样式 -->
+    <style name="custom_ratingbar_style" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/custom_ratingbar</item>
+        <item name="android:minHeight">30dip</item>
+        <item name="android:maxHeight">30dip</item>
+        <item name="android:stepSize">1</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+
+</resources>

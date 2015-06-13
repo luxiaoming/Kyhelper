@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header_home" />
+
+    <com.ecjtu.ui.ListScrollView
+        android:id="@+id/listScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 日历 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_radius_square"
+                android:padding="5dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="距离开考还有 211 天，今天是↓↓↓"
+                        android:textColor="#3385FF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_week"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:text="今天的校历"
+                        android:textColor="#3385FF" />
+
+                    <TextView
+                        android:id="@+id/tv_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:text="2015年 5月 29日"
+                        android:textColor="#3385FF"
+                        android:typeface="monospace" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_image_ads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#ffDEDEDE"
+                android:padding="5dp"
+                android:visibility="gone" >
+
+                <com.ecjtu.ui.AutoScrollViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="400dp"
+                    android:layout_height="100dp" >
+                </com.ecjtu.ui.AutoScrollViewPager>
+
+                <ImageButton
+                    android:id="@+id/btn_hide_ads"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right|center"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/ic_banner_hide" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- 考研动态 -->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="30dp"
+                    android:text="考研动态"
+                    android:textColor="#2F4F4F"
+                    android:textSize="18sp" />
+
+                <!-- 研讯新闻列表 -->
+
+                <ListView
+                    android:id="@+id/lv_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:divider="@null"
+                    android:headerDividersEnabled="false" >
+                </ListView>
+            </LinearLayout>
+        </LinearLayout>
+    </com.ecjtu.ui.ListScrollView>
+
+</LinearLayout>

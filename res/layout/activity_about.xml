@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    android:gravity="center"
+    android:padding="20dp" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/rl_welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" >
+
+                <ImageView
+                    android:id="@+id/img_welcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/shape_radius"
+                    android:contentDescription="欢迎登陆"
+                    android:src="@drawable/ic_app" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_welcome"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="{花椒考研助手}\n「祝花椒考研成功!」"
+                    android:textSize="12sp"
+                    android:typeface="monospace" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_welcome"
+                android:gravity="left"
+                android:lineSpacingExtra="5dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="\n			为我校考研花椒们设计开发的一款手机应用软件，中文名叫作“花椒考研助手”，英文名字的话就记为“ECJTU-Kyhelper”吧。Kyhelper作为大家在备考过程中的学习助手，以节省你们在寻找考研资料与考研信息方面的时间及精力，让每个花椒能够自由地获取信息，更好的集中精力在功课上，全面提高备考的效率。
+\n\n联系方式: 
+\n联系人		胡学长
+\n电话		18720074853
+\nQQ		909867044
+\n欢迎大家使用本软件并提出宝贵的意见		
+\n\n祝你学习愉快+考研胜利"
+                android:textSize="12sp"
+                android:typeface="monospace" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

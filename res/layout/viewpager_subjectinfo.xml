@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 展示背景 -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#008B8B"
+            android:contentDescription="背景"
+            android:fitsSystemWindows="true" />
+
+        <TextView
+            android:id="@+id/tv_subject_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="花椒考研助手"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.2dp"
+        android:background="#bb000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#F5F5F5"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_subject_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="花椒考研助手花椒考研助手"
+                        android:textColor="#808080"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:text="【写在前面】"
+                android:textColor="#2F4F4F"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_subject_promotion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.5"
+                android:padding="10dp"
+                android:text="    本知识点的复习是有规律和技巧的，详情请看下述指导。"
+                android:textColor="#696969"
+                android:textSize="14sp"
+                android:typeface="monospace" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:text="【指点迷津】"
+                android:textColor="#2F4F4F"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#F5F5F5"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_subject_introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:lineSpacingMultiplier="1.5"
+                    android:padding="10dp"
+                    android:text="花椒考研助手在此指点迷津。"
+                    android:textColor="#696969"
+                    android:textSize="14sp"
+                    android:typeface="monospace" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#F5F5F5"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_commit_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:text="【我来点评】"
+                android:textColor="#2F4F4F"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_commit_parent_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#F5F5F5"
+                android:orientation="vertical"
+                android:padding="2dp" >
+
+                <LinearLayout
+                    android:id="@+id/ll_commit_son_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="3dp" >
+
+                    <TextView
+                        android:id="@+id/tv_commit_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="大椒："
+                        android:textColor="#2F4F4F"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_commit_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="挺不错的，但是内容还不够充实"
+                        android:textColor="#696969"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="3dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="花椒A:"
+                        android:textColor="#2F4F4F"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="这是什么？"
+                        android:textColor="#696969"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="3dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="花椒B:"
+                        android:textColor="#2F4F4F"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="花椒考研助手 (*^__^*) 嘻嘻……"
+                        android:textColor="#696969"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/et_commit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="#F5F5F5"
+                    android:hint="评论一下..."
+                    android:padding="8dp"
+                    android:textColor="#2F4F4F" />
+
+                <Button
+                    android:id="@+id/btn_commit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="3"
+                    android:background="#008B8B"
+                    android:text="评论"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    android:gravity="center"
+    android:padding="20dp" >
+
+    <!-- 成型不改 -->
+
+    <TextView
+        android:id="@+id/tv_reg_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_horizontal"
+        android:text="考研助手 | 花椒加油"
+        android:textColor="#3385FF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <LinearLayout
+        android:id="@+id/ll_row1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_reg_title"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/shape_left_radius_color_square"
+            android:gravity="center"
+            android:text="花椒名"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#5092F5"
+            android:inputType="text"
+            android:paddingLeft="12.0dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_row2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/ll_row1"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/shape_left_radius_color_square"
+            android:gravity="center"
+            android:text="密码 "
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#5092F5"
+            android:inputType="textPassword"
+            android:paddingLeft="12.0dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_row3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/ll_row2"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_comfirm_psd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/shape_left_radius_color_square"
+            android:gravity="center"
+            android:text="确认密码"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_comfirm_psd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#5092F5"
+            android:inputType="textPassword"
+            android:paddingLeft="12.0dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_row4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/ll_row3"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/shape_left_radius_color_square"
+            android:gravity="center"
+            android:text="电话"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#5092F5"
+            android:inputType="number"
+            android:paddingLeft="12.0dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_row6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_row4"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_reg_now"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/shape_radius_color_square"
+            android:text="注册成功"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="「坚持就是胜利」"
+        android:textColor="#3385FF"
+        android:typeface="monospace" />
+
+</RelativeLayout>
